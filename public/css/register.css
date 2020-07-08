@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
+  padding-top: 50px;
+}
+
+.container-register {
+  width: 450px;
+  margin: auto;
+  border-radius: 1.5px;
+  padding: 15px 25px 25px;
+}
+
+.container-register .header {
+  background: #00acc1;
+  text-align: center;
+  color: #E8E8E8;
+  font-size: 20px;
+  border-radius: 2.5px;
+  padding: 10px 0px 6px;
+}
+
+.container-register form {
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 2.5px;
+  padding: 20px 30px 50px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-register form h5 {
+  color: #00acc1;
+  margin: 0;
+  padding: 5px 0px;
+}
+
+.container-register form ::-webkit-input-placeholder {
+  color: #B0B0B0;
+}
+
+.container-register form ::-moz-placeholder {
+  color: #B0B0B0;
+}
+
+.container-register form :-ms-input-placeholder {
+  color: #B0B0B0;
+}
+
+.container-register form ::-ms-input-placeholder {
+  color: #B0B0B0;
+}
+
+.container-register form ::placeholder {
+  color: #B0B0B0;
+}
+
+.container-register form .form-group {
+  margin-top: 14px;
+  position: relative;
+}
+
+.container-register form .form-group .input-text {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #DCDCDC;
+  padding: 11px 32px;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: #B0B0B0;
+}
+
+.container-register form .form-group .form-icon {
+  color: #B0B0B0;
+  font-size: 14px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+.container-register form .form-group .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-register form .form-group .row .col {
+  width: 48%;
+  position: relative;
+  align-self: center;
+}
+
+.container-register form .checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 23px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.container-register form .checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container-register form .checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-register form .checkbox-label .checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 12px;
+  width: 13px;
+  background-color: #fff;
+  border-radius: 2.5px;
+  border: 2px solid #00BCD4;
+}
+
+.container-register form .checkbox-label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-register form .checkbox-label .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 2px;
+  height: 6px;
+  border: 1px solid #00BCD4;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+.container-register form .checkbox-label a {
+  text-decoration: none;
+  color: #00d2d3;
+}
+
+.container-register form button {
+  border: none;
+  border-radius: 2.5px;
+  color: #fff;
+  display: block;
+  padding: 8px 12px;
+  font-size: 10px;
+  cursor: pointer;
+  background: #00d2d3;
+  margin-left: auto;
+}
+

@@ -1,0 +1,82 @@
+@import "./mixins";
+@import "./variables";
+$container-width:450px;
+$bg-header:rgb(0, 172, 193);
+$font-size-header:20px;
+$font-size-icon:14px;
+$font-size-label:12px;
+body{
+    @include body
+}
+.container-register{
+    @include container($container-width);
+    .header{
+        background:$bg-header;
+        text-align: center;
+        color: #E8E8E8;
+        font-size: $font-size-header;
+        border-radius: 2.5px;
+        padding: 10px 0px 6px;
+    }
+    form{
+        margin-top:15px;
+        background: #fff;
+        border-radius: 2.5px;
+        padding: 20px 30px 50px;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        h5{
+            color: $bg-header;
+            margin: 0;
+            padding:5px 0px;
+        }
+        ::placeholder{
+            color: $color-gray-1;
+        }
+        .form-group{
+            margin-top:14px;
+            position: relative;
+            .input-text{
+                @include input-text(3px,#DCDCDC,11px,32px)
+            }
+            .form-icon{
+                color:$color-gray-1;
+                font-size: $font-size-icon;
+                display: block;
+                position: absolute;
+                top:15px;
+                left:13px;
+            }
+            .row{
+                display: flex;
+                justify-content: space-between;
+                .col{
+                    width: 48%;
+                    position: relative;
+                    align-self: center;
+                }
+            }
+        }
+        .checkbox-label{
+            @include checkbox-label(23px){
+                font-size:$font-size-label;
+            };
+            .checkmark{
+                @include checkmark(0px,0px,12px,13px,#fff){
+                    border:2px solid $color-blue-1;
+                };
+                &:after{
+                    @include checkmark-after(5px,1px,2px,6px,$color-blue-1)
+                }
+            }
+            a{
+                text-decoration: none;
+                color:$color-blue-2;
+            }
+        }
+        button{
+            @include button(8px,12px,$color-blue-2){
+                margin-left:auto;
+            }
+        }
+    }
+}

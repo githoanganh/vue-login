@@ -1,0 +1,16 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import 'login.scss';
+@import 'register.scss';
+/* Import Font Awesome Icons Set */
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/css/font-awesome.css';
+body{
+    @include body;
+}
+.form-feedback {
+    color: red;
+    font-size: 10px;
+    display: block;
+}

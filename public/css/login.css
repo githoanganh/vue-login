@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
+  padding-top: 50px;
+}
+
+.container-login {
+  width: 250px;
+  background: #fff;
+  margin: auto;
+  border-radius: 1.5px;
+  padding: 15px 25px 25px;
+}
+
+.container-login .header {
+  text-align: center;
+}
+
+.container-login .header h5 {
+  -moz-columns: #343a40;
+       columns: #343a40;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.container-login .header h5:before {
+  content: url(/images/logo-login.png?90f7bb244f7e0f4f7fb50fa4ad2a116b);
+  position: relative;
+  top: 4.5px;
+}
+
+.container-login p {
+  padding: 0 25px;
+  color: #B0B0B0;
+  line-height: 16px;
+  font-size: 10px;
+}
+
+.container-login form .form-group {
+  margin-top: 11px;
+}
+
+.container-login form label {
+  font-size: 10px;
+  color: #696969;
+  font-weight: bold;
+}
+
+.container-login form ::-webkit-input-placeholder {
+  color: #B0B0B0;
+}
+
+.container-login form ::-moz-placeholder {
+  color: #B0B0B0;
+}
+
+.container-login form :-ms-input-placeholder {
+  color: #B0B0B0;
+}
+
+.container-login form ::-ms-input-placeholder {
+  color: #B0B0B0;
+}
+
+.container-login form ::placeholder {
+  color: #B0B0B0;
+}
+
+.container-login form .input-text {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #D0D0D0;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: #B0B0B0;
+}
+
+.container-login form .checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.container-login form .checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container-login form .checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-login form .checkbox-label .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  height: 11px;
+  width: 11px;
+  background-color: #eee;
+  border-radius: 2.5px;
+}
+
+.container-login form .checkbox-label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-login form .checkbox-label .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 2px;
+  height: 5px;
+  border: 1px solid #fff;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+.container-login form .checkbox-label input:checked ~ .checkmark {
+  background-color: #00BCD4;
+}
+
+.container-login form button {
+  border: none;
+  border-radius: 2.5px;
+  color: #fff;
+  display: block;
+  padding: 7px 0px;
+  font-size: 10px;
+  cursor: pointer;
+  background: #00BCD4;
+  width: 100%;
+}
+
+.link-action {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link-action a {
+  display: block;
+  text-decoration: none;
+  color: #D0D0D0;
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+
+.link-action a b {
+  color: black;
+}
+

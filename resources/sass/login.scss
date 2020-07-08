@@ -1,0 +1,83 @@
+@import "./mixins";
+@import "./variables";
+$container-width:250px;
+$h5-font-size:14px;
+$h5-color:#343a40;
+$p-font-size:10px;
+$a-font-size:11px;
+$label-color:#696969;
+body{
+    @include body;
+}
+
+.container-login{
+    @include container($container-width){
+        background: $color-white;
+    }
+    .header{
+        text-align: center;
+        h5{
+            columns: $h5-color;
+            font-size: $h5-font-size;
+            margin: 0px;
+            &:before{
+                content: url('logo-login.png');
+                position: relative;
+                top:4.5px;
+            }
+        }
+    }
+    p{
+        padding: 0 25px;
+        color: $color-gray-1;
+        line-height: 16px;
+        font-size: $p-font-size;
+    }
+    form{
+        .form-group{
+            margin-top:11px;
+        }
+        label {
+            font-size: 10px;
+            color:	$label-color;
+            font-weight: bold;
+        }
+        ::placeholder{
+            color: $color-gray-1;
+        }
+        .input-text{
+            @include input-text(2px,$color-gray-2,6px,10px)
+        }
+        .checkbox-label{
+            @include checkbox-label(15px);
+            .checkmark{
+                @include checkmark(2px,0px,11px,11px,#eee);
+                &:after{
+                    @include checkmark-after(4px,1px,2px,5px,$color-white)
+                }
+            }
+            input:checked ~ .checkmark {
+                background-color: #00BCD4;
+            }
+        }
+        button{
+            @include button(7px,0px,#00BCD4){
+                width: 100%;
+            }
+        }
+    }
+}
+.link-action{
+    text-align: center;
+    margin-top:20px;
+    a{
+        display: block;
+        text-decoration: none;
+        color: $color-gray-2;
+        font-size: $a-font-size;
+        margin-bottom: 12px;
+        b{
+            color: black;
+        }
+    }
+}

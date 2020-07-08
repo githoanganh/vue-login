@@ -1,0 +1,81 @@
+@mixin body {
+    margin: 0;
+    padding: 0;
+    background-color:$bg-body;
+    font-family: $font-family;
+    padding-top:50px;
+}
+@mixin container($width){
+    width: $width;
+    @content;
+    margin: auto;
+    border-radius: 1.5px;
+    padding:15px 25px 25px;
+}
+@mixin input-text($border-radius,$border-color,$padding-top-bottom,$padding-left-right){
+    margin-top:5px;
+    width: 100%;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    padding: $padding-top-bottom $padding-left-right;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #B0B0B0;
+}
+@mixin button($padding-top-bottom,$padding-left-right,$color) {
+    border: none;
+    border-radius: 2.5px;
+    color: #fff;
+    display: block;
+    padding:$padding-top-bottom $padding-left-right;
+    font-size: 10px;
+    cursor: pointer;
+    background: $color;
+    @content;
+}
+@mixin checkbox-label($padding-left) {
+    display: block;
+    position: relative;
+    padding-left: $padding-left;
+    cursor: pointer;
+    @content;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+}
+  
+
+@mixin checkmark($top,$left,$width,$height,$bg-color) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    height: $width;
+    width: $height;
+    background-color: $bg-color;
+    border-radius: 2.5px;
+    @content;
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+
+
+
+@mixin checkmark-after($left,$top,$width,$height,$border-color) {
+    left: $left;
+    top: $top;
+    width: $width;
+    height: $height;
+    border: 1px solid $border-color;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+}
